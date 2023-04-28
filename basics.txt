@@ -1,0 +1,68 @@
+first mkdir then go to that file and then do git init
+
+to set name git config --global user.name "xyz"
+
+git status:-shows the changes done until now
+
+add files like 
+git add Sum.java  or to put all files into staging area write :- git add .
+
+and will put it in the staging area
+we can make alots of files and put only few files for the commit this can be achieved by git add "file"
+
+now this file can be tracked
+
+now to see the status means in what files changes occurs and new ly added files use:-
+git status
+
+
+now to commit :-
+
+git commit -m "write any message related t commit"
+
+
+this will save the changes in folder for Sum.java file
+
+
+to see how many commits have been done until now
+
+git log
+
+
+
+now to go to the previous commit
+
+copy hashcode of that commit 
+
+git checkout hashcode
+
+>>git checkout master --give head to the latest commit 
+
+>> to make any brnch for a specific tak we make another branch
+
+like i want ot make multiplication file 
+so from >>git branch  >> will show me in which branch i am (probably in master)
+
+now make >> git branch dev
+
+now go to this branch by
+
+>> git checkout dev
+
+now again create git branch multiply
+
+now in multiply make file multiply.java  do all the testing 
+
+now merge dev and multiply like
+
+>>git checkout dev
+>>git merge multiply
+
+>>now dev will have all the files in multiply bracnch
+
+>>now to merge master branch with dev
+
+>>git checkout master
+>>git merge dev
+
+
